@@ -19,7 +19,7 @@ const Terms: React.FC = () => {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-red-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Terms Summary</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@ const Terms: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-900 m-0">1. Acceptance of Terms</h2>
               </div>
               
-              <div className="bg-blue-50 rounded-lg p-6">
+              <div className="bg-red-50 rounded-lg p-6">
                 <p className="text-gray-700 mb-4">
                   By downloading, accessing, or using the Roadeye mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
                 </p>
@@ -117,7 +117,7 @@ const Terms: React.FC = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-blue-50 rounded-lg p-6">
+                <div className="bg-red-50 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">For Drivers</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• Maintain valid driving license and vehicle documents</li>
@@ -138,7 +138,7 @@ const Terms: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-900 m-0">4. Privacy and Data Protection</h2>
               </div>
               
-              <div className="bg-blue-50 rounded-lg p-6">
+              <div className="bg-red-50 rounded-lg p-6">
                 <p className="text-gray-700 mb-4">
                   Your privacy is important to us. Our Privacy Policy, which is incorporated into these Terms by reference, explains how we collect, use, and protect your information.
                 </p>

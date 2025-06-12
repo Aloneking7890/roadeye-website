@@ -19,7 +19,7 @@ const Privacy: React.FC = () => {
       </section>
 
       {/* Quick Overview */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-red-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Privacy at a Glance</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -114,7 +114,7 @@ const Privacy: React.FC = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-blue-50 rounded-lg p-6">
+                <div className="bg-red-50 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Service Improvement</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• App performance optimization</li>
@@ -186,7 +186,7 @@ const Privacy: React.FC = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-blue-50 rounded-lg p-6">
+                <div className="bg-red-50 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Technical Safeguards</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• End-to-end encryption for all communications</li>
@@ -293,7 +293,7 @@ const Privacy: React.FC = () => {
             </div>
 
             {/* Updates */}
-            <div className="bg-blue-50 rounded-lg p-6">
+            <div className="bg-red-50 rounded-lg p-6">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Policy Updates</h2>
               <p className="text-gray-700 mb-4">
                 We may update this privacy policy from time to time. When we do, we'll:

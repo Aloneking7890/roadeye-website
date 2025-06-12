@@ -123,7 +123,7 @@ const Safety: React.FC = () => {
               <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
                 ✓ All Systems Active
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+              <div className="absolute -bottom-4 -left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
                 🛡️ Protected Journey
               </div>
             </div>
@@ -168,7 +168,7 @@ const Safety: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">QR Code Contains:</h3>
               <div className="space-y-3">
                 <div className="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
@@ -287,7 +287,7 @@ const Safety: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-blue-50 rounded-2xl p-6 text-center">
+            <div className="bg-red-50 rounded-2xl p-6 text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-red-600" />
               </div>

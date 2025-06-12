@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.path)
-                    ? 'text-red-600 bg-blue-50'
+                    ? 'text-red-600 bg-red-50'
                     : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
                 }`}
               >
@@ -42,7 +42,7 @@ const Navigation: React.FC = () => {
             ))}
             <Link
               to="/download"
-              className="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-red-700 transition-colors"
             >
               Download App
             </Link>
@@ -70,7 +70,7 @@ const Navigation: React.FC = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? 'text-red-600 bg-blue-50'
+                      ? 'text-red-600 bg-red-50'
                       : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
                   }`}
                 >

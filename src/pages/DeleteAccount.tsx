@@ -28,7 +28,7 @@ const DeleteAccount: React.FC = () => {
             Your Roadeye account and all associated data have been permanently deleted. 
             We're sorry to see you go, and we hope you'll consider using Roadeye again in the future.
           </p>
-          <div className="bg-blue-50 rounded-lg p-6 text-left">
+          <div className="bg-red-50 rounded-lg p-6 text-left">
             <h3 className="font-semibold text-gray-900 mb-2">What happens next?</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• All your personal data has been removed from our servers</li>
@@ -107,7 +107,7 @@ const DeleteAccount: React.FC = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Enter your registered email"
                     required
                   />
@@ -122,7 +122,7 @@ const DeleteAccount: React.FC = () => {
                     id="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Enter your password"
                     required
                   />
@@ -170,7 +170,7 @@ const DeleteAccount: React.FC = () => {
                     value={feedback}
                     onChange={(e) => setFeedback(e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Tell us what led to this decision..."
                   />
                 </div>
