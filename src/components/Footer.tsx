@@ -61,11 +61,11 @@ const Footer: React.FC = () => {
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <Mail className="h-4 w-4" />
-              <span>support@Roadeye.app</span>
+              <span>roadeye.in@gmail.com</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <Phone className="h-4 w-4" />
-              <span>+91 9876543210</span>
+              <span>+91 7003565823</span>
             </div>
           </div>
         </div>

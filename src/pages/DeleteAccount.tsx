@@ -274,11 +274,11 @@ const DeleteAccount: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">Email Support</h3>
-              <p className="text-sm text-gray-600">support@Roadeye.app</p>
+              <p className="text-sm text-gray-600">roadeye.in@gmail.com</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-sm text-gray-600">+91 98765 43210</p>
+              <p className="text-sm text-gray-600">+91 7003565823</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">Help Center</h3>

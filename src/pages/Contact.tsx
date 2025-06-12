@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">WhatsApp Support</h3>
               <p className="text-gray-600 mb-2">Quick chat support</p>
-              <p className="text-green-600 font-semibold">+91 98765 43210</p>
+              <p className="text-green-600 font-semibold">+91 7003565823</p>
               <p className="text-sm text-gray-500">9 AM - 9 PM IST</p>
             </div>
             
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Support</h3>
               <p className="text-gray-600 mb-2">General inquiries</p>
-              <p className="text-purple-600 font-semibold">support@Roadeye.app</p>
+              <p className="text-purple-600 font-semibold">roadeye.in@gmail.com</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
             </div>
             
