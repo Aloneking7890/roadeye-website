@@ -25,8 +25,8 @@ const DeleteAccount: React.FC = () => {
           <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-6" />
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Account Deleted Successfully</h1>
           <p className="text-lg text-gray-600 mb-8">
-            Your Rodeye account and all associated data have been permanently deleted. 
-            We're sorry to see you go, and we hope you'll consider using Rodeye again in the future.
+            Your Roadeye account and all associated data have been permanently deleted. 
+            We're sorry to see you go, and we hope you'll consider using Roadeye again in the future.
           </p>
           <div className="bg-blue-50 rounded-lg p-6 text-left">
             <h3 className="font-semibold text-gray-900 mb-2">What happens next?</h3>
@@ -157,7 +157,7 @@ const DeleteAccount: React.FC = () => {
               </div>
               
               <p className="text-gray-600 mb-6">
-                We're constantly working to improve Rodeye. Your feedback helps us understand what we can do better.
+                We're constantly working to improve Roadeye. Your feedback helps us understand what we can do better.
               </p>
               
               <form onSubmit={(e) => { e.preventDefault(); setStep(3); }}>
@@ -274,7 +274,7 @@ const DeleteAccount: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">Email Support</h3>
-              <p className="text-sm text-gray-600">support@rodeye.app</p>
+              <p className="text-sm text-gray-600">support@Roadeye.app</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>

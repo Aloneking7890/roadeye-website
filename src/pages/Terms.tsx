@@ -10,7 +10,7 @@ const Terms: React.FC = () => {
           <FileText className="h-16 w-16 text-blue-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Terms & Conditions</h1>
           <p className="text-xl text-gray-600">
-            Please read these terms carefully before using Rodeye
+            Please read these terms carefully before using Roadeye
           </p>
           <div className="mt-8 text-sm text-gray-500">
             Last updated: January 1, 2025 • Effective Date: January 1, 2025
@@ -26,7 +26,7 @@ const Terms: React.FC = () => {
             <div className="bg-white rounded-lg p-6 shadow-sm text-center">
               <Shield className="h-8 w-8 text-green-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Safety First</h3>
-              <p className="text-sm text-gray-600">Use Rodeye responsibly for your safety and others</p>
+              <p className="text-sm text-gray-600">Use Roadeye responsibly for your safety and others</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm text-center">
               <Users className="h-8 w-8 text-blue-600 mx-auto mb-3" />
@@ -56,10 +56,10 @@ const Terms: React.FC = () => {
               
               <div className="bg-blue-50 rounded-lg p-6">
                 <p className="text-gray-700 mb-4">
-                  By downloading, accessing, or using the Rodeye mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
+                  By downloading, accessing, or using the Roadeye mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
                 </p>
                 <p className="text-gray-700">
-                  These Terms constitute a legally binding agreement between you and Rodeye Technologies Private Limited ("Rodeye," "we," "us," or "our"), a company incorporated under the Companies Act, 2013, and registered in India.
+                  These Terms constitute a legally binding agreement between you and Roadeye Technologies Private Limited ("Roadeye," "we," "us," or "our"), a company incorporated under the Companies Act, 2013, and registered in India.
                 </p>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Terms: React.FC = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">For Drivers</h3>
                   <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• Maintain valid driving license and vehicle documents</li>
-                    <li>• Display Rodeye QR code prominently in vehicle</li>
+                    <li>• Display Roadeye QR code prominently in vehicle</li>
                     <li>• Drive safely and follow traffic regulations</li>
                     <li>• Maintain vehicle in good condition</li>
                     <li>• Treat passengers with respect and professionalism</li>
@@ -211,7 +211,7 @@ const Terms: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Service Limitations</h3>
                     <p className="text-gray-700 text-sm">
-                      Rodeye is a technology platform that facilitates safety tracking and communication. 
+                      Roadeye is a technology platform that facilitates safety tracking and communication. 
                       We do not provide transportation services directly and are not responsible for the 
                       actions of drivers or passengers.
                     </p>
@@ -229,7 +229,7 @@ const Terms: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Liability Cap</h3>
                     <p className="text-gray-700 text-sm">
-                      To the maximum extent permitted by law, Rodeye's total liability for any claims 
+                      To the maximum extent permitted by law, Roadeye's total liability for any claims 
                       arising from the use of the App shall not exceed the amount paid by you for 
                       premium services in the 12 months preceding the claim.
                     </p>
@@ -302,12 +302,12 @@ const Terms: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold mb-2">Legal Department</h3>
-                  <p className="text-blue-300">legal@rodeye.app</p>
+                  <p className="text-blue-300">legal@Roadeye.app</p>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Registered Address</h3>
                   <p className="text-gray-300 text-sm">
-                    Rodeye Technologies Pvt. Ltd.<br />
+                    Roadeye Technologies Pvt. Ltd.<br />
                     Mumbai, Maharashtra, India
                   </p>
                 </div>

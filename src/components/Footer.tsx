@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 text-2xl font-bold mb-4">
               <Shield className="h-8 w-8 text-blue-400" />
-              <span>Rodeye</span>
+              <span>Roadeye</span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Making Indian roads safer through innovative QR-based tracking technology. 
@@ -56,12 +56,12 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Rodeye. All rights reserved.
+            © 2025 Roadeye. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <Mail className="h-4 w-4" />
-              <span>support@rodeye.app</span>
+              <span>support@Roadeye.app</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <Phone className="h-4 w-4" />

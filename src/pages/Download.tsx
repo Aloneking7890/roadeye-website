@@ -8,7 +8,7 @@ const DownloadPage: React.FC = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <Download className="h-16 w-16 text-blue-600 mx-auto mb-6" />
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Download Rodeye</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">Download Roadeye</h1>
           <p className="text-xl text-gray-600 mb-8">
             Get the app that's making Indian roads safer, one journey at a time
           </p>
@@ -260,7 +260,7 @@ const DownloadPage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Travel Safer?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of Indians who trust Rodeye for their daily journeys
+            Join thousands of Indians who trust Roadeye for their daily journeys
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

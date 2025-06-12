@@ -134,7 +134,7 @@ const Home: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Rodeye Works</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How Roadeye Works</h2>
             <p className="text-xl text-gray-600">Simple. Secure. Smart.</p>
           </div>
           
@@ -144,7 +144,7 @@ const Home: React.FC = () => {
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
               <h3 className="text-2xl font-semibold mb-4">Scan QR Code</h3>
-              <p className="text-gray-600">Find the Rodeye QR code in the vehicle and scan it with our app to access driver and vehicle information.</p>
+              <p className="text-gray-600">Find the Roadeye QR code in the vehicle and scan it with our app to access driver and vehicle information.</p>
             </div>
             <div className="text-center">
               <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -250,7 +250,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "As a parent, Rodeye gives me peace of mind when my daughter travels alone. 
+                "As a parent, Roadeye gives me peace of mind when my daughter travels alone. 
                 I can track her journey and know she's safe."
               </p>
               <div className="flex items-center space-x-3">
@@ -314,7 +314,7 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Make Your Journeys Safer?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of Indians already using Rodeye to stay safe on the road.
+            Join thousands of Indians already using Roadeye to stay safe on the road.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

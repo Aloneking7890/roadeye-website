@@ -282,7 +282,7 @@ const Privacy: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h3 className="font-semibold mb-2">Email Us</h3>
-                    <p className="text-blue-300">privacy@rodeye.app</p>
+                    <p className="text-blue-300">privacy@Roadeye.app</p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Response Time</h3>

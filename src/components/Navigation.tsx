@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-blue-600">
             <Shield className="h-8 w-8" />
-            <span>Rodeye</span>
+            <span>Roadeye</span>
           </Link>
 
           {/* Desktop Navigation */}

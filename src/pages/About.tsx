@@ -7,7 +7,7 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">About Rodeye</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">About Roadeye</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             We're on a mission to make Indian roads safer through innovative technology, 
             one journey at a time.
@@ -23,7 +23,7 @@ const About: React.FC = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Rodeye was born from a simple yet powerful realization: in a country where 
+                  Roadeye was born from a simple yet powerful realization: in a country where 
                   millions of people depend on shared transportation daily, there was no easy 
                   way to verify driver identity or share journey details with loved ones.
                 </p>
@@ -190,7 +190,7 @@ const About: React.FC = () => {
               design, is a step towards making our roads safer."
             </p>
             <div className="mt-6">
-              <p className="font-semibold text-gray-900">The Rodeye Team</p>
+              <p className="font-semibold text-gray-900">The Roadeye Team</p>
               <p className="text-gray-600">Mumbai, India</p>
             </div>
           </div>

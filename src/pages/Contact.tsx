@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Emergency Hotline</h3>
               <p className="text-gray-600 mb-2">24/7 Emergency Support</p>
-              <p className="text-blue-600 font-semibold">1800-RODEYE-1</p>
+              <p className="text-blue-600 font-semibold">1800-Roadeye-1</p>
               <p className="text-sm text-gray-500">(1800-763-393-1)</p>
             </div>
             
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Support</h3>
               <p className="text-gray-600 mb-2">General inquiries</p>
-              <p className="text-purple-600 font-semibold">support@rodeye.app</p>
+              <p className="text-purple-600 font-semibold">support@Roadeye.app</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
             </div>
             
@@ -247,7 +247,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">How do I scan a QR code?</h3>
-              <p className="text-gray-600 text-sm">Open the Rodeye app, tap the scan button, and point your camera at the QR code in the vehicle.</p>
+              <p className="text-gray-600 text-sm">Open the Roadeye app, tap the scan button, and point your camera at the QR code in the vehicle.</p>
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-sm">

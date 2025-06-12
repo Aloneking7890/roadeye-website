@@ -142,7 +142,7 @@ const Safety: React.FC = () => {
               </div>
               <p className="text-lg text-gray-600 mb-6">
                 Our QR codes are tamper-proof and contain encrypted information that can only 
-                be decoded by the Rodeye app, ensuring authenticity and preventing fraud.
+                be decoded by the Roadeye app, ensuring authenticity and preventing fraud.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -395,7 +395,7 @@ const Safety: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">Emergency Hotline</h3>
-              <p className="text-2xl font-bold text-blue-200">1800-RODEYE-1</p>
+              <p className="text-2xl font-bold text-blue-200">1800-Roadeye-1</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">WhatsApp Support</h3>

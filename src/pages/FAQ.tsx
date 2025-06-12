@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
     {
       id: 1,
       question: "How do I scan a QR code in the vehicle?",
-      answer: "Open the Rodeye app, tap the 'Scan QR' button on the home screen, and point your camera at the QR code displayed in the vehicle. The app will automatically detect and scan the code, showing you driver and vehicle information.",
+      answer: "Open the Roadeye app, tap the 'Scan QR' button on the home screen, and point your camera at the QR code displayed in the vehicle. The app will automatically detect and scan the code, showing you driver and vehicle information.",
       category: "qr-scanning"
     },
     {
@@ -29,7 +29,7 @@ const FAQ: React.FC = () => {
     {
       id: 3,
       question: "How does location sharing work?",
-      answer: "When you start a trip, Rodeye automatically shares your real-time location with your selected emergency contacts. They receive a link to track your journey live. Location sharing stops when you end the trip or turn it off manually.",
+      answer: "When you start a trip, Roadeye automatically shares your real-time location with your selected emergency contacts. They receive a link to track your journey live. Location sharing stops when you end the trip or turn it off manually.",
       category: "location"
     },
     {
@@ -47,7 +47,7 @@ const FAQ: React.FC = () => {
     {
       id: 6,
       question: "What if I accidentally press the SOS button?",
-      answer: "You have a 10-second countdown to cancel the alert after pressing SOS. If you don't cancel, the alert is sent. If it was accidental, immediately call our emergency hotline (1800-RODEYE-1) to inform our team and prevent unnecessary emergency response.",
+      answer: "You have a 10-second countdown to cancel the alert after pressing SOS. If you don't cancel, the alert is sent. If it was accidental, immediately call our emergency hotline (1800-Roadeye-1) to inform our team and prevent unnecessary emergency response.",
       category: "emergency"
     },
     {
@@ -65,12 +65,12 @@ const FAQ: React.FC = () => {
     {
       id: 9,
       question: "How do I become a verified driver?",
-      answer: "To become verified: 1) Download the Rodeye Driver app, 2) Submit your driving license and vehicle documents, 3) Complete background verification, 4) Pass our safety training course, 5) Get your vehicle inspected. The process takes 3-5 business days.",
+      answer: "To become verified: 1) Download the Roadeye Driver app, 2) Submit your driving license and vehicle documents, 3) Complete background verification, 4) Pass our safety training course, 5) Get your vehicle inspected. The process takes 3-5 business days.",
       category: "drivers"
     },
     {
       id: 10,
-      question: "How do I get my Rodeye QR code for my vehicle?",
+      question: "How do I get my Roadeye QR code for my vehicle?",
       answer: "After completing driver verification, you'll receive a waterproof QR code sticker by mail within 7 days. You can also download a digital version from the driver app. Display it prominently inside your vehicle where passengers can easily scan it.",
       category: "drivers"
     },
@@ -88,14 +88,14 @@ const FAQ: React.FC = () => {
     },
     {
       id: 13,
-      question: "Is Rodeye free to use?",
+      question: "Is Roadeye free to use?",
       answer: "Yes, core safety features are completely free: QR scanning, location sharing with 3 contacts, SOS alerts, and driver verification. Premium features like extended contact lists, advanced analytics, and priority support are available for ₹99/month.",
       category: "general"
     },
     {
       id: 14,
-      question: "Which cities does Rodeye cover?",
-      answer: "Rodeye is currently available in 15+ major Indian cities including Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, and more. We're rapidly expanding to cover all major cities and towns across India.",
+      question: "Which cities does Roadeye cover?",
+      answer: "Roadeye is currently available in 15+ major Indian cities including Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, and more. We're rapidly expanding to cover all major cities and towns across India.",
       category: "general"
     },
     {
@@ -140,7 +140,7 @@ const FAQ: React.FC = () => {
           <HelpCircle className="h-16 w-16 text-blue-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-gray-600">
-            Find quick answers to common questions about Rodeye
+            Find quick answers to common questions about Roadeye
           </p>
         </div>
       </section>
@@ -234,7 +234,7 @@ const FAQ: React.FC = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-lg mb-2">Emergency Support</h3>
               <p className="text-blue-100 mb-2">24/7 Available</p>
-              <p className="text-2xl font-bold">1800-RODEYE-1</p>
+              <p className="text-2xl font-bold">1800-Roadeye-1</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -246,7 +246,7 @@ const FAQ: React.FC = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-lg mb-2">Email Support</h3>
               <p className="text-blue-100 mb-2">Detailed help</p>
-              <p className="text-lg font-bold">support@rodeye.app</p>
+              <p className="text-lg font-bold">support@Roadeye.app</p>
             </div>
           </div>
           
