@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                       {/* Map Area */}
                       <div className="mx-6 h-80 bg-gray-100 rounded-2xl overflow-hidden relative">
                         <img 
-                          src="/asset/road.png" 
+                          src="https://res.cloudinary.com/ds4g8swft/image/upload/v1749706345/road-removebg-preview_bnkagx.png" 
                           alt="Road map" 
                           className="w-full h-full object-cover"
                         />
