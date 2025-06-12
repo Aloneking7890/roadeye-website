@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { QrCode, MapPin, Shield, AlertTriangle, Users, Star, Download, Play } from 'lucide-react';
+import { QrCode, MapPin, Shield, AlertTriangle, Users, Star, Download, Play, X } from 'lucide-react';
 
 const Home: React.FC = () => {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -26,8 +27,10 @@ const Home: React.FC = () => {
                 >
                   <Download className="h-5 w-5" />
                   <span>Download Now</span>
-                </Link>
-                <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-red-600 hover:text-red-600 transition-colors flex items-center space-x-2">
+                </Link>                <button 
+                  onClick={() => setIsVideoModalOpen(true)}
+                  className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-red-600 hover:text-red-600 transition-colors flex items-center space-x-2"
+                >
                   <Play className="h-5 w-5" />
                   <span>Watch Demo</span>
                 </button>
@@ -329,9 +332,35 @@ const Home: React.FC = () => {
             >
               Download for iOS
             </Link>
+          </div>        </div>
+      </section>
+
+      {/* Video Modal */}
+      {isVideoModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="relative bg-white rounded-lg max-w-4xl w-full">
+            <button
+              onClick={() => setIsVideoModalOpen(false)}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <X className="h-8 w-8" />
+            </button>
+            <div className="aspect-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/B5eePBZYXoM?si=6MTTrUH5uSSX37uA&autoplay=1"
+                title="Roadeye Demo Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="rounded-lg"
+              ></iframe>
+            </div>
           </div>
         </div>
-      </section>
+      )}
     </div>
   );
 };
