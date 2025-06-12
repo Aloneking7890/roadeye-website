@@ -7,30 +7,110 @@ const Home: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Scan. Share. 
-            <span className="text-blue-600"> Stay Safe.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Revolutionary QR-based safety tracking for Indian roads. Know who's driving, 
-            share your journey, and stay connected with your loved ones.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link
-              to="/download"
-              className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center space-x-2"
-            >
-              <Download className="h-5 w-5" />
-              <span>Download Now</span>
-            </Link>
-            <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors flex items-center space-x-2">
-              <Play className="h-5 w-5" />
-              <span>Watch Demo</span>
-            </button>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                Scan. Share. 
+                <span className="text-blue-600"> Stay Safe.</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl">
+                Revolutionary QR-based safety tracking for Indian roads. Know who's driving, 
+                share your journey, and stay connected with your loved ones.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
+                <Link
+                  to="/download"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                >
+                  <Download className="h-5 w-5" />
+                  <span>Download Now</span>
+                </Link>
+                <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors flex items-center space-x-2">
+                  <Play className="h-5 w-5" />
+                  <span>Watch Demo</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Right Mobile Mockup */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Phone Frame */}
+                <div className="relative w-72 h-[600px] bg-black rounded-[3rem] p-3 shadow-2xl">
+                  <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
+                    {/* Phone Screen Content */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white">
+                      {/* Status Bar */}
+                      <div className="flex justify-between items-center px-6 py-3 text-sm font-medium">
+                        <span>9:41</span>
+                        <div className="flex space-x-1">
+                          <div className="w-1 h-1 bg-black rounded-full"></div>
+                          <div className="w-1 h-1 bg-black rounded-full"></div>
+                          <div className="w-1 h-1 bg-black rounded-full"></div>
+                        </div>
+                      </div>
+
+                      {/* App Header */}
+                      <div className="px-6 py-4 text-center">
+                        <h2 className="text-2xl font-bold text-gray-900">ROAD</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 -mt-2">SAFETY</h2>
+                      </div>
+
+                      {/* Map Area */}
+                      <div className="mx-6 h-80 bg-gray-100 rounded-2xl overflow-hidden relative">
+                        <img 
+                          src="/asset/road.png" 
+                          alt="Road map" 
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Location Pin */}
+                        <div className="absolute top-20 right-12">
+                          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center shadow-lg">
+                            <MapPin className="h-5 w-5 text-white" />
+                          </div>
+                        </div>
+                        {/* Route Line */}
+                        <div className="absolute top-32 left-8 w-24 h-1 bg-blue-500 rounded-full transform rotate-45"></div>
+                        <div className="absolute top-40 left-20 w-16 h-1 bg-green-500 rounded-full transform rotate-12"></div>
+                      </div>
+
+                      {/* Share Location Button */}
+                      <div className="px-6 mt-6">
+                        <button className="w-full bg-blue-600 text-white py-4 rounded-2xl font-semibold text-lg shadow-lg">
+                          SHARE LOCATION
+                        </button>
+                      </div>
+
+                      {/* Safety Indicators */}
+                      <div className="px-6 mt-4 flex justify-between">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                          <span className="text-sm text-gray-600">Safe Zone</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Shield className="h-4 w-4 text-blue-600" />
+                          <span className="text-sm text-gray-600">Protected</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Elements */}
+                <div className="absolute -top-4 -left-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                  <QrCode className="h-8 w-8 text-white" />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+          {/* Feature Cards - Moved below hero content */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <QrCode className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">QR Code Scanning</h3>
