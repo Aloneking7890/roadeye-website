@@ -88,7 +88,7 @@ const DeleteAccount: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-blue-100 p-2 rounded-full">
-                  <Shield className="h-6 w-6 text-blue-600" />
+                  <Shield className="h-6 w-6 text-red-600" />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Step 1: Verify Your Identity</h2>
               </div>
@@ -130,7 +130,7 @@ const DeleteAccount: React.FC = () => {
                 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                  className="w-full bg-red-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
                 >
                   Verify Identity
                 </button>
@@ -185,7 +185,7 @@ const DeleteAccount: React.FC = () => {
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                    className="flex-1 bg-red-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
                   >
                     Continue
                   </button>

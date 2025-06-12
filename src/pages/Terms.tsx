@@ -7,7 +7,7 @@ const Terms: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <FileText className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+          <FileText className="h-16 w-16 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Terms & Conditions</h1>
           <p className="text-xl text-gray-600">
             Please read these terms carefully before using Roadeye
@@ -29,7 +29,7 @@ const Terms: React.FC = () => {
               <p className="text-sm text-gray-600">Use Roadeye responsibly for your safety and others</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-              <Users className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+              <Users className="h-8 w-8 text-red-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Respect Others</h3>
               <p className="text-sm text-gray-600">Maintain respectful behavior with all users</p>
             </div>
@@ -50,7 +50,7 @@ const Terms: React.FC = () => {
             {/* Acceptance of Terms */}
             <div className="mb-12">
               <div className="flex items-center space-x-3 mb-6">
-                <Scale className="h-8 w-8 text-blue-600" />
+                <Scale className="h-8 w-8 text-red-600" />
                 <h2 className="text-2xl font-bold text-gray-900 m-0">1. Acceptance of Terms</h2>
               </div>
               
@@ -134,7 +134,7 @@ const Terms: React.FC = () => {
             {/* Privacy and Data */}
             <div className="mb-12">
               <div className="flex items-center space-x-3 mb-6">
-                <Shield className="h-8 w-8 text-blue-600" />
+                <Shield className="h-8 w-8 text-red-600" />
                 <h2 className="text-2xl font-bold text-gray-900 m-0">4. Privacy and Data Protection</h2>
               </div>
               
@@ -144,15 +144,15 @@ const Terms: React.FC = () => {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                     <p className="text-gray-700">Location data is only collected during active trips and shared with your chosen emergency contacts</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                     <p className="text-gray-700">Personal information is encrypted and stored securely</p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                     <p className="text-gray-700">You control who can access your information and when</p>
                   </div>
                 </div>

@@ -137,7 +137,7 @@ const FAQ: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <HelpCircle className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+          <HelpCircle className="h-16 w-16 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-gray-600">
             Find quick answers to common questions about Roadeye
@@ -170,7 +170,7 @@ const FAQ: React.FC = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     selectedCategory === category.id
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-red-600 text-white'
                       : 'bg-white text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -223,7 +223,7 @@ const FAQ: React.FC = () => {
       </section>
 
       {/* Still Need Help */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Still Need Help?</h2>
           <p className="text-xl text-blue-100 mb-8">
@@ -253,7 +253,7 @@ const FAQ: React.FC = () => {
           <div className="mt-8">
             <a
               href="/contact"
-              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Support Team
             </a>
@@ -268,7 +268,7 @@ const FAQ: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <QrCode className="h-8 w-8 text-blue-600 mb-3" />
+              <QrCode className="h-8 w-8 text-red-600 mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">QR Code Issues</h3>
               <p className="text-gray-600 text-sm">Troubleshooting QR code scanning problems</p>
             </div>

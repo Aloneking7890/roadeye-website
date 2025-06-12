@@ -40,7 +40,7 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-red-600 to-purple-600 rounded-3xl p-8 shadow-2xl">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white">
                   <h3 className="text-2xl font-bold mb-4">Since 2023</h3>
                   <div className="grid grid-cols-2 gap-4">
@@ -74,7 +74,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-3 mb-6">
-                <Target className="h-8 w-8 text-blue-600" />
+                <Target className="h-8 w-8 text-red-600" />
                 <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
@@ -112,7 +112,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-blue-600" />
+                <Shield className="h-8 w-8 text-red-600" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Safety First</h3>
               <p className="text-gray-600">
@@ -147,7 +147,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Our Impact */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Impact</h2>

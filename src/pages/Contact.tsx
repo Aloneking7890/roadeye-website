@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <MessageCircle className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+          <MessageCircle className="h-16 w-16 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
           <p className="text-xl text-gray-600">
             We're here to help. Reach out to us anytime for support, feedback, or questions.
@@ -44,11 +44,11 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-8 w-8 text-blue-600" />
+                <Phone className="h-8 w-8 text-red-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Emergency Hotline</h3>
               <p className="text-gray-600 mb-2">24/7 Emergency Support</p>
-              <p className="text-blue-600 font-semibold">1800-Roadeye-1</p>
+              <p className="text-red-600 font-semibold">1800-Roadeye-1</p>
               <p className="text-sm text-gray-500">(1800-763-393-1)</p>
             </div>
             
@@ -194,7 +194,7 @@ const Contact: React.FC = () => {
                 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
                 >
                   <Send className="h-5 w-5" />
                   <span>Send Message</span>
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Support Hours */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Clock className="h-12 w-12 mx-auto mb-4 text-blue-200" />
@@ -269,7 +269,7 @@ const Contact: React.FC = () => {
           <div className="text-center mt-8">
             <a
               href="/faq"
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               View All FAQs
             </a>

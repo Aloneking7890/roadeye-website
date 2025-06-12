@@ -8,7 +8,7 @@ const Safety: React.FC = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Shield className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+            <Shield className="h-16 w-16 text-red-600 mx-auto mb-6" />
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Safety Standards</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive safety protocols designed to protect every user on Indian roads
@@ -33,7 +33,7 @@ const Safety: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-blue-100 p-2 rounded-full">
-                    <MapPin className="h-5 w-5 text-blue-600" />
+                    <MapPin className="h-5 w-5 text-red-600" />
                   </div>
                   <span className="text-gray-700">Live location shared with emergency contacts</span>
                 </div>
@@ -54,7 +54,7 @@ const Safety: React.FC = () => {
 
             {/* Interactive Safety Dashboard */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-red-600 to-purple-600 rounded-3xl p-8 shadow-2xl">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white">
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="text-xl font-bold">Safety Dashboard</h3>
@@ -137,7 +137,7 @@ const Safety: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <QrCode className="h-8 w-8 text-blue-600" />
+                <QrCode className="h-8 w-8 text-red-600" />
                 <h2 className="text-3xl font-bold text-gray-900">Secure QR Code System</h2>
               </div>
               <p className="text-lg text-gray-600 mb-6">
@@ -202,7 +202,7 @@ const Safety: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-gradient-to-br from-green-600 to-blue-600 rounded-3xl p-8 text-white shadow-2xl">
+              <div className="bg-gradient-to-br from-green-600 to-red-600 rounded-3xl p-8 text-white shadow-2xl">
                 <h3 className="text-2xl font-bold mb-6">Live Tracking Dashboard</h3>
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
                   <div className="flex items-center justify-between mb-4">
@@ -289,7 +289,7 @@ const Safety: React.FC = () => {
             
             <div className="bg-blue-50 rounded-2xl p-6 text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-8 w-8 text-blue-600" />
+                <Phone className="h-8 w-8 text-red-600" />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Voice Call Backup</h3>
               <p className="text-gray-600">
@@ -322,7 +322,7 @@ const Safety: React.FC = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-blue-100 p-3 rounded-full">
-                  <Users className="h-6 w-6 text-blue-600" />
+                  <Users className="h-6 w-6 text-red-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">For Passengers</h3>
               </div>
@@ -385,7 +385,7 @@ const Safety: React.FC = () => {
       </section>
 
       {/* Emergency Support */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Phone className="h-16 w-16 mx-auto mb-6 text-blue-200" />
           <h2 className="text-3xl font-bold mb-6">24/7 Emergency Support</h2>

@@ -7,7 +7,7 @@ const Privacy: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <Lock className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+          <Lock className="h-16 w-16 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
           <p className="text-xl text-gray-600">
             Your privacy is our priority. Here's how we collect, use, and protect your data.
@@ -29,7 +29,7 @@ const Privacy: React.FC = () => {
               <p className="text-sm text-gray-600">We only collect what's necessary for your safety</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-              <Eye className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+              <Eye className="h-8 w-8 text-red-600 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">You Control Sharing</h3>
               <p className="text-sm text-gray-600">You decide who sees your location and when</p>
             </div>
@@ -50,7 +50,7 @@ const Privacy: React.FC = () => {
             {/* Information We Collect */}
             <div className="mb-12">
               <div className="flex items-center space-x-3 mb-6">
-                <Database className="h-8 w-8 text-blue-600" />
+                <Database className="h-8 w-8 text-red-600" />
                 <h2 className="text-2xl font-bold text-gray-900 m-0">Information We Collect</h2>
               </div>
               
@@ -181,7 +181,7 @@ const Privacy: React.FC = () => {
             {/* Data Security */}
             <div className="mb-12">
               <div className="flex items-center space-x-3 mb-6">
-                <Shield className="h-8 w-8 text-blue-600" />
+                <Shield className="h-8 w-8 text-red-600" />
                 <h2 className="text-2xl font-bold text-gray-900 m-0">How We Protect Your Data</h2>
               </div>
               

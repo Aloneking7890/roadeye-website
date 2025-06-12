@@ -28,7 +28,7 @@ const Features: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 shadow-lg">
-              <QrCode className="h-12 w-12 text-blue-600 mb-4" />
+              <QrCode className="h-12 w-12 text-red-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Instant QR Scanning</h3>
               <p className="text-gray-600">
                 Scan the QR code in your vehicle to instantly access driver details, 
@@ -100,7 +100,7 @@ const Features: React.FC = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="bg-blue-100 p-3 rounded-full">
-                  <Shield className="h-6 w-6 text-blue-600" />
+                  <Shield className="h-6 w-6 text-red-600" />
                 </div>
                 <h3 className="text-xl font-semibold">Driver Verification Badge</h3>
               </div>
@@ -190,7 +190,7 @@ const Features: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="bg-blue-100 p-2 rounded-full mt-1">
-                    <MapPin className="h-4 w-4 text-blue-600" />
+                    <MapPin className="h-4 w-4 text-red-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Route Deviation Alerts</h4>
@@ -226,7 +226,7 @@ const Features: React.FC = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-br from-red-600 to-purple-600 rounded-3xl p-8 text-white">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
                 <h4 className="text-xl font-bold mb-4">Live Journey Dashboard</h4>
                 <div className="space-y-3">

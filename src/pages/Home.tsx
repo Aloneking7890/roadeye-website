@@ -13,7 +13,7 @@ const Home: React.FC = () => {
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
                 Scan. Share. 
-                <span className="text-blue-600"> Stay Safe.</span>
+                <span className="text-red-600"> Stay Safe.</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl">
                 Revolutionary QR-based safety tracking for Indian roads. Know who's driving, 
@@ -22,12 +22,12 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
                 <Link
                   to="/download"
-                  className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                  className="bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors flex items-center space-x-2"
                 >
                   <Download className="h-5 w-5" />
                   <span>Download Now</span>
                 </Link>
-                <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors flex items-center space-x-2">
+                <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-red-600 hover:text-red-600 transition-colors flex items-center space-x-2">
                   <Play className="h-5 w-5" />
                   <span>Watch Demo</span>
                 </button>
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
                 <div className="relative w-72 h-[600px] bg-black rounded-[3rem] p-3 shadow-2xl">
                   <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
                     {/* Phone Screen Content */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white">
+                    <div className="absolute inset-0 bg-gradient-to-b from-red-50 to-white">
                       {/* Status Bar */}
                       <div className="flex justify-between items-center px-6 py-3 text-sm font-medium">
                         <span>9:41</span>
@@ -72,13 +72,13 @@ const Home: React.FC = () => {
                           </div>
                         </div>
                         {/* Route Line */}
-                        <div className="absolute top-32 left-8 w-24 h-1 bg-blue-500 rounded-full transform rotate-45"></div>
+                        <div className="absolute top-32 left-8 w-24 h-1 bg-red-500 rounded-full transform rotate-45"></div>
                         <div className="absolute top-40 left-20 w-16 h-1 bg-green-500 rounded-full transform rotate-12"></div>
                       </div>
 
                       {/* Share Location Button */}
                       <div className="px-6 mt-6">
-                        <button className="w-full bg-blue-600 text-white py-4 rounded-2xl font-semibold text-lg shadow-lg">
+                        <button className="w-full bg-red-600 text-white py-4 rounded-2xl font-semibold text-lg shadow-lg">
                           SHARE LOCATION
                         </button>
                       </div>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
                           <span className="text-sm text-gray-600">Safe Zone</span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <Shield className="h-4 w-4 text-blue-600" />
+                          <Shield className="h-4 w-4 text-red-600" />
                           <span className="text-sm text-gray-600">Protected</span>
                         </div>
                       </div>
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
                 </div>
 
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                <div className="absolute -top-4 -left-4 w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg animate-pulse">
                   <QrCode className="h-8 w-8 text-white" />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
           {/* Feature Cards - Moved below hero content */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <QrCode className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <QrCode className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">QR Code Scanning</h3>
               <p className="text-gray-600">Instantly verify driver identity and vehicle details</p>
             </div>
@@ -141,7 +141,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-blue-600">1</span>
+                <span className="text-2xl font-bold text-red-600">1</span>
               </div>
               <h3 className="text-2xl font-semibold mb-4">Scan QR Code</h3>
               <p className="text-gray-600">Find the Roadeye QR code in the vehicle and scan it with our app to access driver and vehicle information.</p>
@@ -165,7 +165,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Features Preview */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -194,7 +194,7 @@ const Home: React.FC = () => {
               </ul>
               <Link 
                 to="/features" 
-                className="inline-block mt-8 text-white border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                className="inline-block mt-8 text-white border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-colors"
               >
                 Explore All Features
               </Link>
@@ -203,7 +203,7 @@ const Home: React.FC = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
                 <div className="bg-white rounded-2xl p-6 text-gray-900 shadow-lg">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
                       <Shield className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -255,7 +255,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="font-semibold text-blue-600">P</span>
+                  <span className="font-semibold text-red-600">P</span>
                 </div>
                 <div>
                   <p className="font-semibold">Priya Sharma</p>
@@ -310,7 +310,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-red-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Make Your Journeys Safer?</h2>
           <p className="text-xl text-blue-100 mb-8">
@@ -319,13 +319,13 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/download"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-red-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Download for Android
             </Link>
             <Link
               to="/download"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-red-600 transition-colors"
             >
               Download for iOS
             </Link>

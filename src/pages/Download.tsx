@@ -7,7 +7,7 @@ const DownloadPage: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <Download className="h-16 w-16 text-blue-600 mx-auto mb-6" />
+          <Download className="h-16 w-16 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Download Roadeye</h1>
           <p className="text-xl text-gray-600 mb-8">
             Get the app that's making Indian roads safer, one journey at a time
@@ -70,7 +70,7 @@ const DownloadPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <QrCode className="h-8 w-8 text-blue-600" />
+                <QrCode className="h-8 w-8 text-red-600" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Instant QR Scanning</h3>
               <p className="text-gray-600">Scan driver QR codes to instantly verify identity and vehicle details</p>
@@ -166,7 +166,7 @@ const DownloadPage: React.FC = () => {
       </section>
 
       {/* Version Information */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Latest Version Features</h2>
@@ -256,7 +256,7 @@ const DownloadPage: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-red-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Travel Safer?</h2>
           <p className="text-xl text-blue-100 mb-8">
@@ -266,7 +266,7 @@ const DownloadPage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#"
-              className="bg-white text-blue-600 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-gray-100 transition-colors"
+              className="bg-white text-red-600 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-gray-100 transition-colors"
             >
               <Apple className="h-6 w-6" />
               <span className="font-semibold">Download for iOS</span>
@@ -274,7 +274,7 @@ const DownloadPage: React.FC = () => {
             
             <a
               href="#"
-              className="bg-white text-blue-600 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-gray-100 transition-colors"
+              className="bg-white text-red-600 px-8 py-4 rounded-2xl flex items-center space-x-3 hover:bg-gray-100 transition-colors"
             >
               <Play className="h-6 w-6" />
               <span className="font-semibold">Download for Android</span>
