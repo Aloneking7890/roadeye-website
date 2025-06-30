@@ -13,11 +13,11 @@ const Home: React.FC = () => {
             {/* Left Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-                Scan. Share. 
+                Scan. Share.
                 <span className="text-red-600"> Stay Safe.</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl">
-                Revolutionary QR-based safety tracking for Indian roads. Know who's driving, 
+                Revolutionary QR-based safety tracking for Indian roads. Know who's driving,
                 share your journey, and stay connected with your loved ones.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                 >
                   <Download className="h-5 w-5" />
                   <span>Download Now</span>
-                </Link>                <button 
+                </Link>                <button
                   onClick={() => setIsVideoModalOpen(true)}
                   className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-red-600 hover:text-red-600 transition-colors flex items-center space-x-2"
                 >
@@ -63,9 +63,9 @@ const Home: React.FC = () => {
 
                       {/* Map Area */}
                       <div className="mx-6 h-80 bg-gray-100 rounded-2xl overflow-hidden relative">
-                        <img 
-                          src="https://res.cloudinary.com/ds4g8swft/image/upload/v1749706345/road-removebg-preview_bnkagx.png" 
-                          alt="Road map" 
+                        <img
+                          src="https://res.cloudinary.com/ds4g8swft/image/upload/v1749706345/road-removebg-preview_bnkagx.png"
+                          alt="Road map"
                           className="w-full h-full object-cover"
                         />
                         {/* Location Pin */}
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">How Roadeye Works</h2>
             <p className="text-xl text-gray-600">Simple. Secure. Smart.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Built for India's Roads</h2>
               <p className="text-xl mb-8 opacity-90">
-                Designed specifically for Indian transportation challenges, from auto-rickshaws 
+                Designed specifically for Indian transportation challenges, from auto-rickshaws
                 to long-distance buses. Every journey matters.
               </p>
               <ul className="space-y-4">
@@ -195,8 +195,8 @@ const Home: React.FC = () => {
                   <span>24/7 emergency response</span>
                 </li>
               </ul>
-              <Link 
-                to="/features" 
+              <Link
+                to="/features"
                 className="inline-block mt-8 text-white border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-colors"
               >
                 Explore All Features
@@ -244,7 +244,7 @@ const Home: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Users Say</h2>
             <p className="text-xl text-gray-600">Real stories from real people</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-1 mb-4">
@@ -253,7 +253,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "As a parent, Roadeye gives me peace of mind when my daughter travels alone. 
+                "As a parent, Roadeye gives me peace of mind when my daughter travels alone.
                 I can track her journey and know she's safe."
               </p>
               <div className="flex items-center space-x-3">
@@ -266,7 +266,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -274,7 +274,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "The QR system is brilliant! I can verify my driver immediately and share 
+                "The QR system is brilliant! I can verify my driver immediately and share
                 the details with family. Excellent security feature."
               </p>
               <div className="flex items-center space-x-3">
@@ -287,7 +287,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -295,7 +295,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "The SOS feature saved my life during an emergency. Quick response and 
+                "The SOS feature saved my life during an emergency. Quick response and
                 my location was shared instantly with police and family."
               </p>
               <div className="flex items-center space-x-3">
@@ -320,18 +320,22 @@ const Home: React.FC = () => {
             Join thousands of Indians already using Roadeye to stay safe on the road.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/download"
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aloneking798.ROADEYE"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-red-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Download for Android
-            </Link>
-            <Link
-              to="/download"
+              Download RoadEye
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.roadeye.driver"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-red-600 transition-colors"
             >
-              Download for iOS
-            </Link>
+              Download RoadEye Driver
+            </a>
           </div>        </div>
       </section>
 
