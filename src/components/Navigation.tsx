@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +20,8 @@ const Navigation: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-red-600">
-            <Shield className="h-8 w-8" />
-            <span>Roadeye</span>
+          <Link to="/" className="flex items-center">
+            <img src="/asset/logo.png" alt="Roadeye Logo" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
