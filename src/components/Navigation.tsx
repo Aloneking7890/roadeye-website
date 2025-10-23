@@ -30,11 +30,10 @@ const Navigation: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive(item.path)
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.path)
                     ? 'text-red-600 bg-red-50'
                     : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>
@@ -67,11 +66,10 @@ const Navigation: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.path)
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
                       ? 'text-red-600 bg-red-50'
                       : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </Link>

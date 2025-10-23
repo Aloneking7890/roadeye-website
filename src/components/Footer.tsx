@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <img src="/asset/logo.png" alt="Roadeye Logo" className="h-12" />
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Making Indian roads safer through innovative QR-based tracking technology. 
+              Making Indian roads safer through innovative QR-based tracking technology.
               Scan. Share. Stay Safe.
             </p>
             <div className="flex space-x-4">
