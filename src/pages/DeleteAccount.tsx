@@ -278,7 +278,7 @@ const DeleteAccount: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-sm text-gray-600">+91 7003565823</p>
+              <p className="text-sm text-gray-600">+91 914742123</p>
             </div>
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">Help Center</h3>

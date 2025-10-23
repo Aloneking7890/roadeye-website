@@ -240,7 +240,7 @@ const FAQ: React.FC = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-lg mb-2">WhatsApp Chat</h3>
               <p className="text-blue-100 mb-2">Quick responses</p>
-              <p className="text-2xl font-bold">+91 7003565823</p>
+              <p className="text-2xl font-bold">+91 914742123</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

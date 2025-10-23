@@ -399,7 +399,7 @@ const Safety: React.FC = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">WhatsApp Support</h3>
-              <p className="text-2xl font-bold text-blue-200">+91 7003565823</p>
+              <p className="text-2xl font-bold text-blue-200">+91 914742123</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">Response Time</h3>
