@@ -10,12 +10,53 @@ const Contact: React.FC = () => {
     type: 'general'
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      // Using Web3Forms API
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '17c9fa94-4f5f-43bf-aa76-99ef9d725719', // Replace with your Web3Forms access key
+          name: formData.name,
+          email: formData.email,
+          subject: `${formData.type.toUpperCase()}: ${formData.subject}`,
+          message: `Inquiry Type: ${formData.type}\n\nMessage:\n${formData.message}`,
+          to: 'roadeye.in@gmail.com'
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+          type: 'general'
+        });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        setError('Failed to send message. Please try again or contact us directly via email.');
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again or contact us directly at roadeye.in@gmail.com');
+      console.error('Form submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -51,7 +92,7 @@ const Contact: React.FC = () => {
               <p className="text-red-600 font-semibold">+91 914742123</p>
               <p className="text-sm text-gray-500">(+91 914742123)</p>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-green-600" />
@@ -61,7 +102,7 @@ const Contact: React.FC = () => {
               <p className="text-green-600 font-semibold">+91 914742123</p>
               <p className="text-sm text-gray-500">9 AM - 9 PM IST</p>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-8 w-8 text-purple-600" />
@@ -71,7 +112,7 @@ const Contact: React.FC = () => {
               <p className="text-purple-600 font-semibold">roadeye.in@gmail.com</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-8 w-8 text-orange-600" />
@@ -92,8 +133,15 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
             <p className="text-xl text-gray-600">We'll get back to you as soon as possible</p>
           </div>
-          
+
           <div className="bg-gray-50 rounded-2xl p-8">
+            {error && (
+              <div className="mb-6 bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+                <p className="font-medium">Error</p>
+                <p className="text-sm">{error}</p>
+              </div>
+            )}
+
             {isSubmitted ? (
               <div className="text-center py-12">
                 <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-6" />
@@ -120,7 +168,7 @@ const Contact: React.FC = () => {
                       required
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
@@ -137,7 +185,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-2">
@@ -158,7 +206,7 @@ const Contact: React.FC = () => {
                       <option value="media">Media Inquiry</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                       Subject *
@@ -175,7 +223,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message *
@@ -191,13 +239,14 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <button
                   type="submit"
-                  className="w-full bg-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+                  disabled={isSubmitting}
+                  className="w-full bg-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors flex items-center justify-center space-x-2 disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
                   <Send className="h-5 w-5" />
-                  <span>Send Message</span>
+                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 </button>
               </form>
             )}
@@ -213,20 +262,20 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">Support Hours</h2>
             <p className="text-xl text-blue-100">We're here when you need us</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-2">Emergency Support</h3>
               <p className="text-blue-100 mb-2">24/7 Available</p>
               <p className="text-sm text-blue-200">For urgent safety concerns</p>
             </div>
-            
+
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-2">General Support</h3>
               <p className="text-blue-100 mb-2">9 AM - 9 PM IST</p>
               <p className="text-sm text-blue-200">Monday to Sunday</p>
             </div>
-            
+
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-2">Email Response</h3>
               <p className="text-blue-100 mb-2">Within 24 hours</p>
@@ -243,29 +292,29 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Quick Answers</h2>
             <p className="text-xl text-gray-600">Check our FAQ for instant answers to common questions</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">How do I scan a QR code?</h3>
               <p className="text-gray-600 text-sm">Open the Roadeye app, tap the scan button, and point your camera at the QR code in the vehicle.</p>
             </div>
-            
+
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">Is my location data safe?</h3>
               <p className="text-gray-600 text-sm">Yes, all location data is encrypted and only shared with your chosen emergency contacts during active trips.</p>
             </div>
-            
+
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">What happens when I press SOS?</h3>
               <p className="text-gray-600 text-sm">Your location and situation are immediately sent to emergency contacts, local police, and our response team.</p>
             </div>
-            
+
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-2">How do I become a verified driver?</h3>
               <p className="text-gray-600 text-sm">Complete our verification process including license check, background verification, and safety training.</p>
             </div>
           </div>
-          
+
           <div className="text-center mt-8">
             <a
               href="/faq"
