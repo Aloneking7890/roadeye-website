@@ -308,7 +308,7 @@ const Terms: React.FC = () => {
                   <h3 className="font-semibold mb-2">Registered Address</h3>
                   <p className="text-gray-300 text-sm">
                     Roadeye Technologies Pvt. Ltd.<br />
-                    Mumbai, Maharashtra, India
+                    Kolkata, West Bengal, India
                   </p>
                 </div>
               </div>

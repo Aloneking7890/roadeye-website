@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Emergency Hotline</h3>
               <p className="text-gray-600 mb-2">24/7 Emergency Support</p>
-              <p className="text-red-600 font-semibold">1800-Roadeye-1</p>
-              <p className="text-sm text-gray-500">(1800-763-393-1)</p>
+              <p className="text-red-600 font-semibold">+91 914742123</p>
+              <p className="text-sm text-gray-500">(+91 914742123)</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Office Address</h3>
               <p className="text-gray-600 mb-2">Visit us</p>
-              <p className="text-orange-600 font-semibold">Mumbai, Maharashtra</p>
+              <p className="text-orange-600 font-semibold">West Bengal</p>
               <p className="text-sm text-gray-500">India</p>
             </div>
           </div>

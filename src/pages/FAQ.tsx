@@ -47,7 +47,7 @@ const FAQ: React.FC = () => {
     {
       id: 6,
       question: "What if I accidentally press the SOS button?",
-      answer: "You have a 10-second countdown to cancel the alert after pressing SOS. If you don't cancel, the alert is sent. If it was accidental, immediately call our emergency hotline (1800-Roadeye-1) to inform our team and prevent unnecessary emergency response.",
+      answer: "You have a 10-second countdown to cancel the alert after pressing SOS. If you don't cancel, the alert is sent. If it was accidental, immediately call our emergency hotline (+91 914742123) to inform our team and prevent unnecessary emergency response.",
       category: "emergency"
     },
     {

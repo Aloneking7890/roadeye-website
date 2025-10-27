@@ -395,7 +395,7 @@ const Safety: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">Emergency Hotline</h3>
-              <p className="text-2xl font-bold text-blue-200">1800-Roadeye-1</p>
+              <p className="text-2xl font-bold text-blue-200">+91 914742123</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="font-bold text-xl mb-2">WhatsApp Support</h3>

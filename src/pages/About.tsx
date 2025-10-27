@@ -191,7 +191,7 @@ const About: React.FC = () => {
             </p>
             <div className="mt-6">
               <p className="font-semibold text-gray-900">The Roadeye Team</p>
-              <p className="text-gray-600">Mumbai, India</p>
+              <p className="text-gray-600">West Bengal, India</p>
             </div>
           </div>
         </div>
